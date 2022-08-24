@@ -1,6 +1,6 @@
 package rbac
 
-import "ciscor/actions"
+import "github.com/shindakioku/ciscor/actions"
 
 type Rbac interface {
 	// CanUse - can a user use action

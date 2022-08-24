@@ -1,4 +1,4 @@
-module ciscor
+module github.com/shindakioku/ciscor
 
 go 1.19
 

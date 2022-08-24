@@ -1,10 +1,7 @@
 package main
 
 import (
-	"ciscor/config"
-	"ciscor/rbac"
 	"github.com/joho/godotenv"
-	"log"
 	"os"
 	"path/filepath"
 )
@@ -22,17 +19,17 @@ func main() {
 	}
 
 	// Init config
-	conf, err := config.New(exPath, os.Getenv("ENVIRONMENT"))
-	if err != nil {
-		log.Fatal("Can't init config: ", err)
+	//conf, err := config.New(exPath, os.Getenv("ENVIRONMENT"))
+	//if err != nil {
+	//	log.Fatal("Can't init config: ", err)
+	//
+	//	return
+	//}
 
-		return
-	}
-
-	rbacService, err := rbac.NewSimple(conf.Users, conf.Roles)
-	if err != nil {
-		log.Fatal("Can't init rbac system: ", err)
-
-		return
-	}
+	//rbacService, err := rbac.NewSimple(conf.Users, conf.Roles)
+	//if err != nil {
+	//	log.Fatal("Can't init rbac system: ", err)
+	//
+	//	return
+	//}
 }

@@ -1,8 +1,8 @@
 package rbac
 
 import (
-	"ciscor/actions"
-	"ciscor/config"
+	"github.com/shindakioku/ciscor/actions"
+	"github.com/shindakioku/ciscor/config"
 	"fmt"
 	"github.com/stretchr/testify/assert"
 	"testing"

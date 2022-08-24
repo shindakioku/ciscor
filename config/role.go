@@ -1,6 +1,6 @@
 package config
 
-import "ciscor/actions"
+import "github.com/shindakioku/ciscor/actions"
 
 type RoleIdentification string
 

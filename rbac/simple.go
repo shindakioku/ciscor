@@ -1,8 +1,8 @@
 package rbac
 
 import (
-	"ciscor/actions"
-	"ciscor/config"
+	"github.com/shindakioku/ciscor/actions"
+	"github.com/shindakioku/ciscor/config"
 	"errors"
 	"fmt"
 )
