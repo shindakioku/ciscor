@@ -1,3 +1,5 @@
 .idea
 ciscor
 .env
+dev_config.yaml
+prod_config.yaml
