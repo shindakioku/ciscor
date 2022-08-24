@@ -1,0 +1,33 @@
+# [Map key] - define user role
+# [name] - render in users list
+# [description] - reminder for you
+# [available_actions] - what can do user which this role. Every action should match with [Key] identification for action.
+#   Use [all] for any action
+roles:
+  admin:
+    name: admin
+    description: Admin
+    available_actions:
+      - all
+  moderator:
+    name: moderator
+    description: Bans only
+    available_actions:
+      - ban
+  editor:
+    name: editor
+    description: Kicks only
+    available_actions:
+      - kick
+
+# Users with access to admin actions
+# [id] - user telegram id
+# [roles] - accesses (defined in [roles])
+users:
+  - id: 1
+    roles:
+      - admin
+  - id: 2
+    roles:
+      - moderator
+      - editor
