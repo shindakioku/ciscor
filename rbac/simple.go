@@ -1,10 +1,10 @@
 package rbac
 
 import (
-	"github.com/shindakioku/ciscor/actions"
-	"github.com/shindakioku/ciscor/config"
 	"errors"
 	"fmt"
+	"github.com/shindakioku/ciscor/actions"
+	"github.com/shindakioku/ciscor/config"
 )
 
 type User struct {
