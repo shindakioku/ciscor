@@ -20,15 +20,6 @@ func (r *RuntimeContainer) Get(identification Identification) Action {
 	return r.actions[identification]
 }
 
-//func (r *RuntimeContainer) Call(identification Identification, args any) (any, error) {
-//	action, exists := r.actions[identification]
-//	if !exists {
-//		return nil, NotRegisteredActionErr
-//	}
-//
-//	return action.Handle(args)
-//}
-
 // NewRuntimeContainer init
 func NewRuntimeContainer(actions ...Action) Container {
 	a := make(map[Identification]Action, len(actions))

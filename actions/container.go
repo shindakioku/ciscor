@@ -24,14 +24,6 @@ type Container interface {
 	Register(action Action) Container
 
 	/*
-		Call action by identification and returns result to client.
-		If action is doesn't exist in container it will return error
-
-			isSuccess, err := container.Action("kick", userID)
-	*/
-	//Call(identification Identification, args any) (any, error)
-
-	/*
 		Get returns action or nil
 
 			action := container.Get("kick")
